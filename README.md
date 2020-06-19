@@ -1,2 +1,3 @@
 **Trees**
-- [ ] <a href="https://youtu.be/UqrqzRPJElk" target="_blank">Tree Traversals</a>
+- [ ] [Tree Traversals](https://youtu.be/UqrqzRPJElk)
+- [ ] [Size of a Binary Tree](https://youtu.be/T8KyS9JZpCU)
