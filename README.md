@@ -1,2 +1,2 @@
 **Trees**
-- [ ] <a href="https://youtu.be/UqrqzRPJElk">Tree Traversals</a>
+- [ ] <a href="https://youtu.be/UqrqzRPJElk" target="_blank">Tree Traversals</a>
