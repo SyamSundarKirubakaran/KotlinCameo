@@ -1,15 +1,12 @@
 package ds
 
+import trees.util.Node
+import trees.util.constructTree
+
 /**
  * @author SYAM K
  * @problem : Tree Traversals
  */
-
-data class Node(
-    val value: Int,
-    val left: Node? = null,
-    val right: Node? = null
-)
 
 fun main() {
     val head = constructTree()
@@ -42,31 +39,4 @@ fun preOrderTraversal(head: Node?) {
         preOrderTraversal(head.left)
         preOrderTraversal(head.right)
     }
-}
-
-/**
- *          1
- *       /     \
- *      2       3
- *    /   \    / \
- *   4     5
- *  / \   / \
- */
-
-fun constructTree(): Node {
-    return Node(
-        value = 1,
-        left = Node(
-            value = 2,
-            left = Node(
-                value = 4
-            ),
-            right = Node(
-                value = 5
-            )
-        ),
-        right = Node(
-            value = 3
-        )
-    )
 }
