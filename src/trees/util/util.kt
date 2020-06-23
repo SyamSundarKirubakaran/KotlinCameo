@@ -71,3 +71,37 @@ fun constructBalancedTree(): Node {
     )
 }
 
+
+/**
+ *           4
+ *       /       \
+ *      2         6
+ *    /   \     /  \
+ *   1     3   5    7
+ *  / \   / \ / \  / \
+ */
+
+fun constructBST(): Node {
+    return Node(
+        value = 4,
+        left = Node(
+            value = 2,
+            left = Node(
+                value = 1
+            ),
+            right = Node(
+                value = 3
+            )
+        ),
+        right = Node(
+            value = 6,
+            left = Node(
+                value = 5
+            ),
+            right = Node(
+                value = 7
+            )
+        )
+    )
+}
+
