@@ -6,3 +6,4 @@
 - [ ] [Level Order Traversal](https://youtu.be/c5IwTf1h3Nc)
 - [ ] [Lowest Common Ancestor in a BST](https://youtu.be/fd_wVjtItIY)
 - [ ] [Lowest Common Ancestor in a BT](https://youtu.be/b0eZmFKHI1s)
+- [ ] [Binary Tree to DLL Inplace conversion - Inorder](https://youtu.be/jE1LFxa-Uaw)
