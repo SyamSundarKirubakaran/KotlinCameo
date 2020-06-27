@@ -7,3 +7,4 @@
 - [ ] [Lowest Common Ancestor in a BST](https://youtu.be/fd_wVjtItIY)
 - [ ] [Lowest Common Ancestor in a BT](https://youtu.be/b0eZmFKHI1s)
 - [ ] [Binary Tree to DLL Inplace conversion - Inorder](https://youtu.be/jE1LFxa-Uaw)
+- [ ] [Diameter of a Binary Tree](https://youtu.be/_gd5x2EjYgk)
