@@ -1,3 +1,13 @@
+
+![image](./img/Kotlin_banner.jpg)
+
+**Note:**<br>
+- Every Problem links to a Youtube Video that explains the problem and all possible solutions.
+- The best way to prepare would be to clone this repo and mark the problems as completed as you progress along.
+
+**Repo Status**<br>
+- In Progress
+
 **Trees**
 - [ ] [Tree Traversals](https://youtu.be/UqrqzRPJElk)
 - [ ] [Size of a Binary Tree](https://youtu.be/T8KyS9JZpCU)
