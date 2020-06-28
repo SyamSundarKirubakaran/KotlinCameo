@@ -22,3 +22,4 @@
 - [ ] [Binary Tree to DLL Inplace conversion - Inorder](https://youtu.be/jE1LFxa-Uaw)
 - [ ] [Diameter of a Binary Tree](https://youtu.be/_gd5x2EjYgk)
 - [ ] [Level of a given node Binary Tree](https://youtu.be/Wq3wnxq_hpQ)
+- [ ] [Nodes at k-distance from the root](https://youtu.be/2oF5MuBH9r8)
