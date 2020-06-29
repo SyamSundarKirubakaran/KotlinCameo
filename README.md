@@ -4,6 +4,7 @@
 ## Note:
 - Every Problem links to a Youtube Video that explains the problem and all possible solutions.
 - The best way to prepare would be to clone this repo and mark the problems as completed as you progress along.
+- If you're a Java person, check out [DSA_Java repo](https://github.com/SyamSundarKirubakaran/DSA_Java), the problem set is the same.
 
 ## Repo Status:
 - In Progress
@@ -23,3 +24,4 @@
 - [ ] [Diameter of a Binary Tree](https://youtu.be/_gd5x2EjYgk)
 - [ ] [Level of a given node Binary Tree](https://youtu.be/Wq3wnxq_hpQ)
 - [ ] [Nodes at k-distance from the root](https://youtu.be/2oF5MuBH9r8)
+- [ ] [Nodes at k-distance from any node in a BT](https://youtu.be/uQgkmWievXM)

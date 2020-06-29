@@ -5,7 +5,7 @@ import trees.util.constructBalancedTree
 
 /**
  * @author SYAM K
- * @problem : Print Nodes at K distance
+ * @problem : Print Nodes at K distance from the root
  */
 
 fun main() {
