@@ -105,3 +105,36 @@ fun constructBST(): Node {
     )
 }
 
+
+/**
+ *           50
+ *       /       \
+ *      15       10
+ *    /   \     /  \
+ *   10    5   7    3
+ *  / \   / \ / \  / \
+ */
+
+fun constructSumTree(): Node {
+    return Node(
+        value = 50,
+        left = Node(
+            value = 15,
+            left = Node(
+                value = 10
+            ),
+            right = Node(
+                value = 5
+            )
+        ),
+        right = Node(
+            value = 10,
+            left = Node(
+                value = 7
+            ),
+            right = Node(
+                value = 3
+            )
+        )
+    )
+}

@@ -1,15 +1,30 @@
-package temp
+package trees
 
 import trees.util.Node
+import trees.util.constructSumTree
 
 /**
  * @author SYAM K
- * @problem : Temp File for Practice before creating youtube video
+ * @problem : Sum Tree or not
+ */
+
+fun main() {
+    val head = constructSumTree()
+    print(checkSumTree(head))
+}
+
+/**
+ *           50
+ *       /       \
+ *      15       10
+ *    /   \     /  \
+ *   10    5   7    3
+ *  / \   / \ / \  / \
  */
 
 fun checkSumTree(head: Node?): Boolean {
-    if (head == null || isLeaf(head)) return true
-    if (trees.checkSumTree(head.left) && trees.checkSumTree(head.right)) {
+    if(head == null || isLeaf(head)) return true
+    if(checkSumTree(head.left) && checkSumTree(head.right)){
         val leftSum = when {
             head.left == null -> 0
             isLeaf(head.left) -> head.left!!.value
@@ -26,6 +41,6 @@ fun checkSumTree(head: Node?): Boolean {
 }
 
 fun isLeaf(head: Node?): Boolean {
-    return if (head == null) false
+    return if(head == null) false
     else head.left == null && head.right == null
 }

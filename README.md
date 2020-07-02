@@ -27,3 +27,4 @@
 - [ ] [Nodes at k-distance from any node in a BT](https://youtu.be/uQgkmWievXM)
 - [ ] [Vertical Tree Order Traversal](https://youtu.be/52ZnowIt1jI)
 - [ ] [Vertical Sum of a Binary Tree](https://youtu.be/p0c5ACJLBPk)
+- [ ] [Sum Tree or not](https://www.youtube.com/watch?v=aRTzFnsynas)
