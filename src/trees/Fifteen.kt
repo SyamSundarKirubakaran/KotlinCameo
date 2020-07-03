@@ -1,20 +1,35 @@
-package temp
+package trees
 
 import trees.util.Node
+import trees.util.constructBalancedTree
 
 /**
  * @author SYAM K
- * @problem : Temp File for Practice before creating youtube video
+ * @problem : Top View
  */
 
 private var min: Int = Int.MAX_VALUE
-private  var max:Int = Int.Companion.MIN_VALUE
+private var max: Int = Int.Companion.MIN_VALUE
 private val hash: LinkedHashMap<Int, Node> = LinkedHashMap()
+
+fun main() {
+    val head = constructBalancedTree()
+    findTopView(head)
+}
+
+/**
+ *           1
+ *       /       \
+ *      2         3
+ *    /   \     /  \
+ *   4     5   6    7
+ *  / \   / \ / \  / \
+ */
 
 fun findTopView(head: Node) {
     getMinMax(head, 0)
-    for (lineNo in min..max) {
-        inflateTopView(head, lineNo, 0)
+    for (i in min..max) {
+        inflateTopView(head, i, 0)
     }
     hash.forEach { (_, u) ->
         println(u.value)
@@ -23,7 +38,7 @@ fun findTopView(head: Node) {
 
 fun inflateTopView(head: Node?, lineNo: Int, hd: Int) {
     if (head == null) return
-    if (hd == lineNo) hash.putIfAbsent(lineNo, head)
+    if (lineNo == hd) hash.putIfAbsent(lineNo, head)
     inflateTopView(head.left, lineNo, hd - 1)
     inflateTopView(head.right, lineNo, hd + 1)
 }
