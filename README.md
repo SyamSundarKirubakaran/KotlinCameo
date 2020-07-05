@@ -11,7 +11,6 @@
 
 ## Topics:
 - [Trees](#Trees)
-
 ## Trees
 - [ ] ds.Tree.kt -> [Tree Traversals](https://youtu.be/UqrqzRPJElk)
 - [ ] trees.One.kt -> [Size of a Binary Tree](https://youtu.be/T8KyS9JZpCU)
@@ -30,3 +29,4 @@
 - [ ] trees.Fourteen.kt -> [Sum Tree or not](https://www.youtube.com/watch?v=aRTzFnsynas)
 - [ ] trees.Fifteen.kt -> [Top View of a Binary Tree](https://youtu.be/ftQ6ucy7XFM)
 - [ ] trees.Sixteen.kt -> [Bottom View of a Binary Tree](https://youtu.be/MaOR6405WHg)
+- [ ] trees.Seventeen.kt -> [Left View of a Binary Tree](https://youtu.be/x0GL9Iz_iik)
