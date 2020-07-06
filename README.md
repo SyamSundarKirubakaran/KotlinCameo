@@ -30,3 +30,4 @@
 - [ ] trees.Fifteen.kt -> [Top View of a Binary Tree](https://youtu.be/ftQ6ucy7XFM)
 - [ ] trees.Sixteen.kt -> [Bottom View of a Binary Tree](https://youtu.be/MaOR6405WHg)
 - [ ] trees.Seventeen.kt -> [Left View of a Binary Tree](https://youtu.be/x0GL9Iz_iik)
+- [ ] trees.Eighteen.kt -> [Remove all nodes whose length = k in a given BT](https://youtu.be/cOIDvjdRvKE)
