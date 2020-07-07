@@ -39,6 +39,25 @@ fun constructTree(): Node {
 }
 
 /**
+ *      2
+ *    /   \
+ *   4     5
+ *  / \   / \
+ */
+
+fun constructSubTree(): Node {
+    return Node(
+        value = 2,
+        left = Node(
+            value = 4
+        ),
+        right = Node(
+            value = 5
+        )
+    )
+}
+
+/**
  *           1
  *       /       \
  *      2         3
