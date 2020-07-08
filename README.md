@@ -33,3 +33,4 @@
 - [ ] trees.Seventeen.kt -> [Left View of a Binary Tree](https://youtu.be/x0GL9Iz_iik)
 - [ ] trees.Eighteen.kt -> [Remove all nodes whose length = k in a given BT](https://youtu.be/cOIDvjdRvKE)
 - [ ] trees.Nineteen.kt -> [One BT is a subtree of another BT or not](https://youtu.be/8xOvb1_rGbg)
+- [ ] trees.Twenty.kt -> [Cousin nodes or not](https://youtu.be/xkCNEu27R8M)
