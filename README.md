@@ -35,3 +35,4 @@
 - [ ] trees.Nineteen.kt -> [One BT is a subtree of another BT or not](https://youtu.be/8xOvb1_rGbg)
 - [ ] trees.Twenty.kt -> [Cousin nodes or not](https://youtu.be/xkCNEu27R8M)
 - [ ] trees.TwentyOne.kt -> [Balanced BST construction from a sorted list](https://youtu.be/-aGezpat2E0)
+- [ ] trees.TwentyTwo.kt -> [Unbalanced BST into a Balanced BST](https://youtu.be/UvCgOtx8n3k)

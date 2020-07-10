@@ -39,6 +39,26 @@ fun constructTree(): Node {
 }
 
 /**
+ *    1
+ *   / \
+ *      2
+ *     / \
+ *        4
+ *       / \
+ */
+fun skewedTree(): Node {
+    return Node(
+        value = 1,
+        right = Node(
+            value = 2,
+            right = Node(
+                value = 4
+            )
+        )
+    )
+}
+
+/**
  *      2
  *    /   \
  *   4     5
