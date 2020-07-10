@@ -2,9 +2,10 @@
 ![image](./img/Kotlin_banner.jpg)
 
 ## Note:
-- Every Problem links to a Youtube Video that explains the problem and all possible solutions.
 - The best way to prepare would be to clone this repo and mark the problems as completed as you progress along.
+- Every Problem links to a Youtube Video which explains it.
 - If you're a Java person, check out [DSA_Java repo](https://github.com/SyamSundarKirubakaran/DSA_Java), the problem set is the same.
+- Show some :heart: by giving this repo a :star:
 
 ## Repo Status:
 - In Progress
