@@ -23,20 +23,20 @@ fun main() {
  */
 
 fun checkSumTree(head: Node?): Boolean {
-    if(head == null || isLeaf(head)) return true
-    if(checkSumTree(head.left) && checkSumTree(head.right)){
-        val leftSum = when {
-            head.left == null -> 0
-            isLeaf(head.left) -> head.left!!.value
-            else -> 2 * head.left!!.value
-        }
-        val rightSum = when {
-            head.right == null -> 0
-            isLeaf(head.right) -> head.right!!.value
-            else -> 2 * head.right!!.value
-        }
-        return head.value == leftSum + rightSum
-    }
+//    if(head == null || isLeaf(head)) return true
+//    if(checkSumTree(head.left) && checkSumTree(head.right)){
+//        val leftSum = when {
+//            head.left == null -> 0
+//            isLeaf(head.left) -> head.left!!.value
+//            else -> 2 * head.left!!.value
+//        }
+//        val rightSum = when {
+//            head.right == null -> 0
+//            isLeaf(head.right) -> head.right!!.value
+//            else -> 2 * head.right!!.value
+//        }
+//        return head.value == leftSum + rightSum
+//    }
     return false
 }
 
