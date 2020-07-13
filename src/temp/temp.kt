@@ -1,32 +1,24 @@
 package temp
 
+import trees.postOrderIndex
+import trees.searchInInOrder
 import trees.util.Node
-import java.util.*
 
 /**
  * @author SYAM K
  * @problem : Temp File for Practice before creating youtube video
  */
 
-private val s1: Stack<Node> = Stack<Node>()
-private val s2: Stack<Node> = Stack<Node>()
-
-fun printSpiral(node: Node?) {
-    if (node != null) {
-        s1.push(node)
-        while (!s1.isEmpty() || !s2.isEmpty()) {
-            while (!s1.isEmpty()) {
-                val (value, left, right) = s1.pop()
-                println(value)
-                if (right != null) s2.push(right)
-                if (left != null) s2.push(left)
-            }
-            while (!s2.isEmpty()) {
-                val (value, left, right) = s2.pop()
-                println(value)
-                if (left != null) s1.push(left)
-                if (right != null) s1.push(right)
-            }
-        }
-    }
-}
+//fun construct(
+//    inStart: Int,
+//    inEnd: Int
+//): Node? {
+//    if (inStart > inEnd) return null
+//    val node = Node(postOrder[postOrderIndex])
+//    postOrderIndex -= 1
+//    if (inStart == inEnd) return node
+//    val inIndex: Int = searchInInOrder(inOrder, inStart, inEnd, node.value)
+//    node.right = trees.construct(inIndex + 1, inEnd)
+//    node.left = trees.construct(inStart, inIndex - 1)
+//    return node
+//}
