@@ -1,7 +1,5 @@
 package temp
 
-import trees.postOrderIndex
-import trees.searchInInOrder
 import trees.util.Node
 
 /**
@@ -9,16 +7,25 @@ import trees.util.Node
  * @problem : Temp File for Practice before creating youtube video
  */
 
-//fun construct(
-//    inStart: Int,
-//    inEnd: Int
-//): Node? {
-//    if (inStart > inEnd) return null
-//    val node = Node(postOrder[postOrderIndex])
-//    postOrderIndex -= 1
-//    if (inStart == inEnd) return node
-//    val inIndex: Int = searchInInOrder(inOrder, inStart, inEnd, node.value)
-//    node.right = trees.construct(inIndex + 1, inEnd)
-//    node.left = trees.construct(inStart, inIndex - 1)
-//    return node
-//}
+
+fun findKDistanceFromLeaf(
+    head: Node?,
+    path: IntArray,
+    visited: BooleanArray,
+    pathLength: Int,
+    k: Int
+) {
+    if (head == null) return
+    path[pathLength] = head.value
+    visited[pathLength] = false
+    if (isLeafNode(head) && pathLength - k >= 0 && !visited[pathLength - k]) {
+        println(path[pathLength - k])
+        visited[pathLength - k] = true
+    }
+    findKDistanceFromLeaf(head.left, path, visited, pathLength + 1, k)
+    findKDistanceFromLeaf(head.right, path, visited, pathLength + 1, k)
+}
+
+fun isLeafNode(node: Node): Boolean {
+    return node.left == null && node.right == null
+}

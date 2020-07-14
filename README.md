@@ -40,3 +40,4 @@
 - [ ] trees.TwentyThree.kt -> [Print all nodes from root to lead in a BT](https://youtu.be/2tRF4GSDWeU)
 - [ ] trees.TwentyFour.kt -> [Spiral Level Order Traversal](https://youtu.be/RdUqKikkhDo)
 - [ ] trees.TwentyFive.kt -> [BT construction from POST and IN Order Traversal](https://youtu.be/kcI_bvXKaeM)
+- [ ] trees.TwentySix.kt -> [All nodes at K distance from leaf](https://youtu.be/4aGMLno7IyM)
