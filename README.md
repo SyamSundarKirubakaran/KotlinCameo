@@ -41,3 +41,4 @@
 - [ ] trees.TwentyFour.kt -> [Spiral Level Order Traversal](https://youtu.be/RdUqKikkhDo)
 - [ ] trees.TwentyFive.kt -> [BT construction from POST and IN Order Traversal](https://youtu.be/kcI_bvXKaeM)
 - [ ] trees.TwentySix.kt -> [All nodes at K distance from leaf](https://youtu.be/4aGMLno7IyM)
+- [ ] trees.TwentySeven.kt -> [Expression Tree Evaluation](https://youtu.be/e74fPzgWJ5g)

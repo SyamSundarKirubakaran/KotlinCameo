@@ -1,6 +1,7 @@
 package temp
 
 import trees.util.Node
+import trees.util.SNode
 
 /**
  * @author SYAM K
@@ -8,24 +9,14 @@ import trees.util.Node
  */
 
 
-fun findKDistanceFromLeaf(
-    head: Node?,
-    path: IntArray,
-    visited: BooleanArray,
-    pathLength: Int,
-    k: Int
-) {
-    if (head == null) return
-    path[pathLength] = head.value
-    visited[pathLength] = false
-    if (isLeafNode(head) && pathLength - k >= 0 && !visited[pathLength - k]) {
-        println(path[pathLength - k])
-        visited[pathLength - k] = true
+fun evaluateExpression(head: SNode?): String? {
+    if (head == null) return "!"
+    if (head.value != "*" && head.value != "+" && head.value != "!") return head.value
+    val left = trees.evaluateExpression(head.left)
+    val right = trees.evaluateExpression(head.right)
+    when (head.value) {
+        "+" -> head.value = (left!!.toInt() + right!!.toInt()).toString() + ""
+        "*" -> head.value = (left!!.toInt() * right!!.toInt()).toString() + ""
     }
-    findKDistanceFromLeaf(head.left, path, visited, pathLength + 1, k)
-    findKDistanceFromLeaf(head.right, path, visited, pathLength + 1, k)
-}
-
-fun isLeafNode(node: Node): Boolean {
-    return node.left == null && node.right == null
+    return head.value
 }

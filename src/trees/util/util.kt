@@ -11,6 +11,12 @@ data class Node(
     var right: Node? = null
 )
 
+data class SNode(
+    var value: String,
+    var left: SNode? = null,
+    var right: SNode? = null
+)
+
 /**
  *          1
  *       /     \
@@ -173,6 +179,39 @@ fun constructSumTree(): Node {
             ),
             right = Node(
                 value = 3
+            )
+        )
+    )
+}
+
+/**
+ *           +
+ *       /       \
+ *      *        *
+ *    /   \     /  \
+ *   1     2   3    4
+ *  / \   / \ / \  / \
+ */
+
+fun constructExpressionTree(): SNode {
+    return SNode(
+        value = "+",
+        left = SNode(
+            value = "*",
+            left = SNode(
+                value = "1"
+            ),
+            right = SNode(
+                value = "2"
+            )
+        ),
+        right = SNode(
+            value = "*",
+            left = SNode(
+                value = "3"
+            ),
+            right = SNode(
+                value = "4"
             )
         )
     )
