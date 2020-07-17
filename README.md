@@ -43,3 +43,4 @@
 - [ ] trees.TwentySix.kt -> [All nodes at K distance from leaf](https://youtu.be/4aGMLno7IyM)
 - [ ] trees.TwentySeven.kt -> [Expression Tree Evaluation](https://youtu.be/e74fPzgWJ5g)
 - [ ] trees.TwentyEight.kt -> [Extreme nodes of each level in alternating order](https://youtu.be/9jM3Bqj5phE)
+- [ ] trees.TwentyNine.kt -> [Diagonal Traversal BT](https://youtu.be/N1hHwhtu-ss)
