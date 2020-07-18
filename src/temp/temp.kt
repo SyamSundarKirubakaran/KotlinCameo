@@ -8,19 +8,33 @@ import java.util.*
  * @problem : Temp File for Practice before creating youtube video
  */
 
-private var map: HashMap<Int, MutableList<Node>> = HashMap<Int, MutableList<Node>>()
 
-fun performDiagonalTraversal(node: Node?, d: Int) {
-    if (node == null) return
-    val n = map[d]
-    if (n == null) {
-        val list = LinkedList<Node>()
-        list.add(node)
-        map[d] = list
-    } else {
-        n.add(node)
-        map[d] = n
+fun convertTree(node: Node?) {
+    var leftData = 0
+    var rightData = 0
+    val diff: Int
+    if(node?.left != null || node?.right != null){
+        trees.convertTree(node.left)
+        trees.convertTree(node.right)
+        if (node.left != null) leftData = node.left!!.value
+        if (node.right != null) rightData = node.right!!.value
+        diff = leftData + rightData - node.value
+        if (diff > 0) {
+            node.value = node.value + diff
+        } else {
+            increment(node, -diff)
+        }
     }
-    performDiagonalTraversal(node.left, d + 1)
-    performDiagonalTraversal(node.right, d)
+}
+
+fun increment(node: Node?, diff: Int) {
+    if (node != null) {
+        if (node.left != null) {
+            node.left!!.value = node.left!!.value + diff
+            increment(node.left, diff)
+        } else if (node.right != null) {
+            node.right!!.value = node.right!!.value + diff
+            increment(node.right, diff)
+        }
+    }
 }

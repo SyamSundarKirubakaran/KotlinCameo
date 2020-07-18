@@ -116,6 +116,44 @@ fun constructBalancedTree(): Node {
     )
 }
 
+/**
+ *           55
+ *       /        \
+ *      10        25
+ *    /   \     /    \
+ *   9     4   3     11
+ *  / \   / \ / \    / \
+ *               4
+ *              / \
+ */
+
+fun constructSumTreeInput(): Node {
+    return Node(
+        value = 55,
+        left = Node(
+            value = 10,
+            left = Node(
+                value = 9
+            ),
+            right = Node(
+                value = 4
+            )
+        ),
+        right = Node(
+            value = 25,
+            left = Node(
+                value = 3,
+                right = Node(
+                    value = 4
+                )
+            ),
+            right = Node(
+                value = 11
+            )
+        )
+    )
+}
+
 
 /**
  *           4
