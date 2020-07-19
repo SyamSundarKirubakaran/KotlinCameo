@@ -45,3 +45,4 @@
 - [ ] trees.TwentyEight.kt -> [Extreme nodes of each level in alternating order](https://youtu.be/9jM3Bqj5phE)
 - [ ] trees.TwentyNine.kt -> [Diagonal Traversal BT](https://youtu.be/N1hHwhtu-ss)
 - [ ] trees.Thirty.kt -> [BT to a BT that holds Child sum property](https://youtu.be/jko8H5J6yZM)
+- [ ] trees.ThirtyOne.kt -> [Multiplication of Sums of data at each level](https://youtu.be/auq3GG6fxTU)
