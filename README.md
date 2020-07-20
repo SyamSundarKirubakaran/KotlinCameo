@@ -46,3 +46,4 @@
 - [ ] trees.TwentyNine.kt -> [Diagonal Traversal BT](https://youtu.be/N1hHwhtu-ss)
 - [ ] trees.Thirty.kt -> [BT to a BT that holds Child sum property](https://youtu.be/jko8H5J6yZM)
 - [ ] trees.ThirtyOne.kt -> [Multiplication of Sums of data at each level](https://youtu.be/auq3GG6fxTU)
+- [ ] trees.ThirtyTwo.kt -> [Max of all differences of a node and it's ancestors BT](https://youtu.be/bF35gZXcbuY)

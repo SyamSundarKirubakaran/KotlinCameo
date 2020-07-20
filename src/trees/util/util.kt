@@ -190,6 +190,47 @@ fun constructBST(): Node {
 
 
 /**
+ *           25
+ *       /       \
+ *      32       45
+ *    /   \     /  \
+ *   3     50  2   15
+ *  / \   / \ / \  / \
+ *       4      -5
+ */
+
+fun constructDiffTree(): Node {
+    return Node(
+        value = 25,
+        left = Node(
+            value = 32,
+            left = Node(
+                value = 3
+            ),
+            right = Node(
+                value = 50,
+                left = Node(
+                    value = 4
+                )
+            )
+        ),
+        right = Node(
+            value = 45,
+            left = Node(
+                value = 2,
+                right = Node(
+                    value = -5
+                )
+            ),
+            right = Node(
+                value = 15
+            )
+        )
+    )
+}
+
+
+/**
  *           50
  *       /       \
  *      15       10
