@@ -31,18 +31,18 @@ fun main() {
  */
 
 fun serialize(head: Node?) {
-    if (head == null) serialResult.addLast(Node(-1)) else {
-        serialResult.addLast(head)
+    if(head == null) serialResult.addLast(Node(-1)) else {
+        serialResult.add(head)
         serialize(head.left)
         serialize(head.right)
     }
 }
 
 fun deserialize(serialResult: LinkedList<Node>): Node? {
-    var head: Node? = null
-    if (serialResult.size > 0) {
+    var head : Node? = null
+    if(serialResult.size > 0){
         val popped = serialResult.remove()
-        head = if (popped.value != -1) popped else null
+        head = if(popped.value != -1) popped else null
         deserialize(serialResult)
     }
     return head
