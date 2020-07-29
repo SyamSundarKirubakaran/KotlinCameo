@@ -1,6 +1,6 @@
 package temp
 
-import trees.util.Node
+import trees.util.NNode
 import java.util.*
 
 /**
@@ -8,22 +8,24 @@ import java.util.*
  * @problem : Temp File for Practice before creating youtube video
  */
 
-private var serialResult: LinkedList<Node> = LinkedList<Node>()
+private var serialResult: LinkedList<NNode> = LinkedList()
 
-fun deserialize(serialResult: LinkedList<Node>): Node? {
-    var node: Node? = null
-    if (serialResult.size > 0) {
-        val popped = serialResult.removeFirst()
-        node = if (popped.value != -1) popped else null
-        deserialize(serialResult)
+fun serializeNary(head: NNode?) {
+    if (head == null) serialResult.addLast(NNode(-1)) else {
+        serialResult.addLast(head)
+        for (child in head.children) {
+            trees.serializeNary(child)
+            trees.serializeNary(null)
+        }
     }
-    return node
 }
 
-fun serialize(node: Node?) {
-    if (node == null) serialResult.addLast(Node(-1)) else {
-        serialResult.addLast(node)
-        serialize(node.left)
-        serialize(node.right)
+fun deserializeNary(serialResult: LinkedList<NNode>): NNode? {
+    var head: NNode? = null
+    if (serialResult.size > 0) {
+        val popped: NNode = serialResult.removeFirst()
+        head = if (popped.value != -1) popped else null
+        deserializeNary(serialResult)
     }
+    return head
 }

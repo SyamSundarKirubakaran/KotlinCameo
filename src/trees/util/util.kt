@@ -17,6 +17,11 @@ data class SNode(
     var right: SNode? = null
 )
 
+data class NNode(
+    var value: Int,
+    var children: List<NNode> = listOf()
+)
+
 /**
  *          1
  *       /     \
@@ -292,6 +297,34 @@ fun constructExpressionTree(): SNode {
             right = SNode(
                 value = "4"
             )
+        )
+    )
+}
+
+
+/**
+ *             0
+ *        /     \    \
+ *       1       2    3
+ *    /  |  \     \    \
+ *   4   5   6
+ *   \    \   \
+ */
+
+fun constructNaryTree(): NNode {
+    return NNode(
+        value = 0,
+        children = listOf(
+            NNode(
+                value = 1,
+                children = listOf(
+                    NNode(value = 4),
+                    NNode(value = 5),
+                    NNode(value = 6)
+                )
+            ),
+            NNode(value = 2),
+            NNode(value = 3)
         )
     )
 }
