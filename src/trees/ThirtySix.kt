@@ -1,11 +1,26 @@
-package temp
+package trees
 
 import trees.util.Node
+import trees.util.constructBalancedTree
 import java.util.*
 
 /**
  * @author SYAM K
- * @problem : Temp File for Practice before creating youtube video
+ * @problem : Find the next right node of a given node in the same level
+ */
+
+fun main() {
+    val head = constructBalancedTree()
+    println(findNextRight(head, 3))
+}
+
+/**
+ *           1
+ *       /       \
+ *      2         3
+ *    /   \     /  \
+ *   4     5   6    7
+ *  / \   / \ / \  / \
  */
 
 fun findNextRight(head: Node?, k: Int): Node? {
@@ -13,14 +28,14 @@ fun findNextRight(head: Node?, k: Int): Node? {
     val qn: Queue<Node> = LinkedList()
     val ql: Queue<Int> = LinkedList()
 
-    var level = 0
     qn.add(head)
-    ql.add(level)
-    while (qn.isNotEmpty()){
+    ql.add(0)
+
+    while(qn.isNotEmpty()){
         val node = qn.remove()
-        level = ql.remove()
+        val level = ql.remove()
         if(node.value == k){
-            return if (ql.isEmpty() || ql.peek() != level) null else qn.peek()
+            return if(ql.isEmpty() || ql.peek() != level) null else qn.peek()
         }
         if(node.left != null){
             qn.add(node.left)

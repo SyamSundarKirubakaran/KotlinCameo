@@ -49,4 +49,5 @@
 - [ ] trees.ThirtyTwo.kt -> [Max of all differences of a node and it's ancestors BT](https://youtu.be/bF35gZXcbuY)
 - [ ] trees.ThirtyThree.kt -> [Serialization and Deserialization BT](https://youtu.be/e5cZ8Ie_fzI)
 - [ ] trees.ThirtyFour.kt -> [Serialization and Deserialization n-ary Tree](https://youtu.be/7uGy7JeM_5k)
-- [ ] trees.ThirtyFive.kt -> [Complete Binary Tree from a LL]()
+- [ ] trees.ThirtyFive.kt -> [Complete Binary Tree from a LL](https://youtu.be/4LAW7sYwCbA)
+- [ ] trees.ThirtySix.kt -> [Find the next right node of a given node in the same level](https://youtu.be/Tqq7vINv5Eo)
